@@ -1,0 +1,53 @@
+.hero {
+  /* Substituímos o azul por preto (0, 0, 0) com 50% de opacidade */
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)),
+    url(../assets/heroExtreme.png);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.hero-content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  margin: 10px;
+  line-height: 1;
+}
+
+.hero h6{
+    /* Aproxima do título principal */
+  font-size: 1.2rem;
+  font-family: 'Permanent Marker', cursive;
+  /* A fonte manuscrita */
+  text-transform: uppercase;
+}
+
+.hero-content{
+  padding-top: 5%;
+  gap: 10px;
+}
+
+.hero-content button {
+  background-color: #5d5fef;
+  /* Roxo da imagem */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  /* Deixa arredondado */
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0px;
+  transition: transform 0.2s;
+}
+
+.hero-content button:hover {
+  transform: scale(1.05);
+}
