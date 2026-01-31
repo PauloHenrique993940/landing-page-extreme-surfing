@@ -1,0 +1,91 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background-color:  #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background-color: #5e54de;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Navigation Styles */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #5e54de;
+}
+
+.arrow {
+  font-size: 10px;
+}
+
+/* Right Section Styles */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* The Pill-shaped Button */
+.phone-cta {
+  background-color: #5e54de;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  /* Makes the pill shape */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.phone-cta:hover {
+  background-color: #4a42b8;
+}

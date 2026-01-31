@@ -1,0 +1,53 @@
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    overflow-y: auto;
+    max-height: calc(100vh - 70px);
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-actions .phone-cta {
+    display: none;
+  }
+  .nav-menu {
+    top: 60px;
+    max-height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    display: none;
+  }
+  .nav-menu {
+    top: 50px;
+    max-height: calc(100vh - 50px);
+  }
+}
