@@ -1,14 +1,95 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
+    <!-- Charset -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logoExtreme.png" />
+
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>landing-page-extreme-surfing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Title (até ~60 caracteres, com palavra-chave) -->
+    <title>Extreme Surfing | Experiência Radical em Ondas Gigantes</title>
+
+    <!-- Meta Description (até ~160 caracteres) -->
+    <meta
+      name="description"
+      content="Extreme Surfing é a landing page perfeita para amantes do surf radical. Descubra experiências extremas, ondas gigantes e adrenalina pura no Brasil."
+    />
+
+    <!-- Palavras-chave (não é fator forte hoje, mas ajuda em contexto local) -->
+    <meta
+      name="keywords"
+      content="surf extremo, ondas gigantes, surf radical, surf no brasil, extreme surfing"
+    />
+
+    <!-- Autor -->
+    <meta name="author" content="Extreme Surfing Brasil" />
+
+    <!-- Idioma e local -->
+    <meta name="language" content="pt-BR" />
+    <meta name="geo.region" content="BR" />
+    <meta name="geo.placename" content="Brasil" />
+
+    <!-- Indexação -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.extremesurfing.com.br" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/src/assets/logoExtreme.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Extreme Surfing | Ondas Gigantes e Adrenalina" />
+    <meta
+      property="og:description"
+      content="Explore o mundo do surf extremo com experiências únicas, ondas gigantes e adrenalina no mais alto nível."
+    />
+    <meta property="og:url" content="https://www.extremesurfing.com.br" />
+    <meta property="og:site_name" content="Extreme Surfing" />
+    <meta property="og:image" content="https://www.extremesurfing.com.br/og-image.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Extreme Surfing | Surf Radical no Brasil" />
+    <meta
+      name="twitter:description"
+      content="Ondas gigantes, adrenalina e experiências extremas para surfistas de verdade."
+    />
+    <meta name="twitter:image" content="https://www.extremesurfing.com.br/og-image.jpg" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Schema.org (Rich Snippets) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        "name": "Extreme Surfing",
+        "description": "Plataforma focada em surf extremo, ondas gigantes e experiências radicais no Brasil.",
+        "url": "https://www.extremesurfing.com.br",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- React / Vite -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
