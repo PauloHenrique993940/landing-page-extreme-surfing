@@ -1,0 +1,51 @@
+.services-Container{
+  background-color: #f2f4ff;
+  color: black;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    /* Espaço entre as fotos e o texto */
+    padding: 60px 10%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Card-Container{
+  display: flex;
+  gap: 20px;
+}
+.Card-Container img{
+  background-color: #4a49b8;
+  padding: 10px;
+  border-radius: 50%;
+}
+.card-grid{
+  background-color: #ffff;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  gap: 30px;
+}
+
+.card-grid h3{
+  margin: 20px;
+}
+
+.card-grid p{
+  font-weight: 300;
+  font-style: normal;
+  color: #646464;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+@media (max-width: 768px) {
+  .Card-Container{
+    flex-direction: column;
+  }
+}

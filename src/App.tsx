@@ -2,6 +2,8 @@
 import './App.css'
 import Header from './components/shared/Header'
 import Hero from './components/shared/Hero'
+import Services from './components/shared/Services'
+import Sobre from './components/shared/Sobre'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
     <>
     <Header />
     <Hero />
+    <Sobre />
+    <Services />
     </>
   )
 }
