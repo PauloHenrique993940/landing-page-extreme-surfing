@@ -1,0 +1,169 @@
+/* Layout Principal */
+.about-surf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  /* Espaço entre as fotos e o texto */
+  padding: 60px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container das Imagens */
+.images-grid {
+  position: relative;
+  width: 450px;
+  /* Aumentado para caber o layout espalhado */
+  height: 450px;
+  flex-shrink: 0;
+}
+
+/* Estilo Base para todas as imagens */
+.imagem {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  /* O aro branco da foto */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Posições Individuais (Baseadas na foto original) */
+
+
+.imagem:nth-child(1) {
+  width: 220px;
+  height: 220px;
+  top: 50px;
+  left: 0;
+  z-index: 2;
+}
+
+/* 2. Surfista na onda (Círculo Pequeno - Topo Centro) */
+.imagem:nth-child(2) {
+  width: 110px;
+  height: 110px;
+  top: 0;
+  left: 200px;
+  z-index: 1;
+}
+
+/* 3. Surfista pegando onda (Círculo Grande - Direita) */
+.imagem:nth-child(3) {
+  width: 300px;
+  height: 300px;
+  right: -20px;
+  top: 100px;
+  z-index: 3;
+}
+
+/* 4. Surfista deitado (Círculo Médio - Esquerda Baixo) */
+.imagem:nth-child(4) {
+  width: 180px;
+  height: 180px;
+  bottom: 0;
+  left: 60px;
+  z-index: 4;
+}
+
+/* --- Estilização do Conteúdo (Lado Direito) --- */
+.content {
+  max-width: 500px;
+}
+
+.content span {
+  color: #5d5cd6;
+  font-family: 'Permanent Marker', cursive;
+  /* Ou uma fonte hand-drawn */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content h3 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 15px 0;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
+.content p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.content button {
+  background-color: #5d5cd6;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.content button::after {
+  content: ' LEARN MORE →';
+}
+
+.content button:hover {
+  transform: scale(1.05);
+  background-color: #4a49b8;
+}
+
+@media (max-width: 1024px) {
+  .about-surf {
+    gap: 40px;
+    padding: 40px 5%;
+  }
+
+  .images-grid {
+    width: 350px;
+    height: 350px;
+    transform: scale(0.8);
+    /* Reduz o mosaico proporcionalmente */
+  }
+
+  .content h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-surf {
+    flex-direction: column;
+    text-align: center;
+    /* Centraliza o texto no mobile */
+    gap: 20px;
+  }
+
+  .images-grid {
+    width: 300px;
+    height: 320px;
+    transform: scale(0.9);
+    margin-bottom: 40px;
+    /* Espaço para o texto não colar nas fotos */
+  }
+
+  /* Ajuste fino das posições para o container menor */
+  .imagem:nth-child(3) {
+    width: 220px;
+    height: 220px;
+    right: 0;
+  }
+
+  .imagem:nth-child(1) {
+    width: 160px;
+    height: 160px;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+}
