@@ -3,9 +3,11 @@
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
 *{
   margin: 0 auto;
   font-family: 'Bebas Neue', sans-serif;
+  box-sizing: border-box
 }

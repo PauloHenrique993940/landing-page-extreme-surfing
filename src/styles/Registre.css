@@ -1,0 +1,122 @@
+.registre-container {
+  background-color: #4a49b8;
+  /* Roxo da imagem */
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  margin: 100px 0;
+  /* Espaço para a imagem vazar em cima e embaixo */
+  position: relative;
+  padding: 60px 10%;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+.form-content {
+  flex: 1;
+  max-width: 600px;
+  color: white;
+  z-index: 2;
+}
+
+.subtitle {
+  font-family: 'Permanent Marker', cursive;
+  font-style: italic;
+  color: #7a79e0;
+  /* Roxo mais claro */
+  letter-spacing: 2px;
+}
+
+.form-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Arial Black', sans-serif;
+  margin: 10px 0 30px 0;
+}
+
+/* Formulário */
+.surf-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+}
+
+.surf-form input,
+.surf-form select,
+.surf-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.surf-form textarea {
+  height: 100px;
+  border-radius: 15px;
+  resize: none;
+}
+
+.btn-submit {
+  background-color: #5d5cd6;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  width: fit-content;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Lado da Imagem */
+.image-wrapper {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.img-oval {
+  position: absolute;
+  width: 60%;
+  left: 77%;
+  /* Mais alto que o container roxo */
+  top: 50%;
+  transform: translate(-30%, -50%);
+  /* Ajusta para vazar */
+  object-fit: cover;
+  /* Cria o efeito oval vertical */
+  border: 10px solid white;
+  /* Moldura branca da foto */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .registre-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .img-oval {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    top: -150px;
+    /* Joga a imagem para cima do form no mobile */
+    left: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+}
